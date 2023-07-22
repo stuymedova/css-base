@@ -54,10 +54,7 @@ strong {
   	font-weight: 600;
 }
 
-em,
-i,
-cite,
-dfn {
+em, i {
     font-style: italic;
 }
 
@@ -70,10 +67,6 @@ sup {
 
 sub {
   	line-height: 1;
-}
-
-abbr {
-  	border: 0;
 }
 
 pre {

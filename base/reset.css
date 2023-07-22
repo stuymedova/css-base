@@ -69,20 +69,15 @@ figcaption {
 
 /*
 Removes borders from `fieldsets`/`iframes`.
-Removes border from an `img`, relevant when the `img` is
-placed inside an `a` element in IE 9/10.
 */
-fieldset,
-iframe,
-img {
+fieldset, iframe {
   	border: 0;
 }
 
 /*
 Resets the default 'center' alignment on elements.
 */
-caption,
-th {
+caption, th {
   	text-align: left;
 }
 
@@ -95,40 +90,17 @@ table {
 }
 
 /*
-Sets the correct `block` display, relevant for IE 9/10/11.
-*/
-article,
-aside,
-footer,
-header,
-nav,
-main,
-section,
-summary,
-details,
-hgroup,
-figure,
-figcaption {
-  	display: block;
-}
-
-/*
-Sets the correct `inline-block` display, relevant for
-IE 9.
-Normalizes vertical alignment of `progress`, relevant
-for Chrome and Firefox.
+Normalizes vertical alignment of `progress`.
 */
 audio,
-canvas,
 video,
+canvas,
 progress {
-	display: inline-block;
 	vertical-align: baseline;
 }
 
 /*
 Removes form-like styles from the `button` element.
-Addresses `overflow` set to `hidden` in IE 9/10/11.
 */
 button {
 	background: none;
@@ -138,7 +110,6 @@ button {
 	cursor: pointer;
 	font: inherit;
 	line-height: inherit;
-	overflow: visible;
 	vertical-align: inherit;
 }
 button:disabled {
