@@ -1,0 +1,9 @@
+:root {
+	--font-family-base: serif;
+	--font-family-mono: monospace;
+	--font-size-base: 16px;
+
+	--color-background: #FFF;
+	--color-main: #000;
+	--color-link: #06C;
+}

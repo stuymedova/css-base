@@ -1,0 +1,90 @@
+@font-face {
+	font-family: F;
+	src:  url('assets/fonts/file.woff2') format('woff2'),
+		  url('assets/fonts/file.woff') format('woff');
+}
+
+body {
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-base);
+	font-style: normal;
+  	word-wrap: break-word;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+	font-synthesis: none;
+	text-rendering: geometricPrecision;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	direction: ltr;
+	text-align: left;
+}
+
+/*
+Link styles
+*/
+a {
+	color: var(--color-link);
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+p + a {
+	display: inline-block;
+}
+
+/*
+Inline elments' styles
+*/
+b,
+strong {
+  	font-weight: 600;
+}
+
+em,
+i,
+cite,
+dfn {
+    font-style: italic;
+}
+
+sup {
+	font-size: .6em;
+	vertical-align: top;
+	position: relative;
+	bottom: -.2em;
+}
+
+sub {
+  	line-height: 1;
+}
+
+abbr {
+  	border: 0;
+}
+
+pre {
+	overflow: auto;
+	-webkit-overflow-scrolling: auto;
+	white-space: pre;
+	word-wrap: normal;
+}
+
+code {
+	font-family: var(--font-family-mono);
+	font-weight: inherit;
+	letter-spacing: 0;
+}

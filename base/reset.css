@@ -1,0 +1,161 @@
+/*
+Prevents iOS from adjusting the text size after the
+orientation changes, without disabling user zoom.
+*/
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	/*
+	Extends footer background color when the body is short
+	enough that it does not actually exceed the breakpoint
+	height.
+	*/
+	background-color: var(--color-background);
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+
+	cursor: default;
+}
+
+/*
+Removes margin and padding from body and base elements.
+*/
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+p,
+blockquote,
+figure,
+form,
+fieldset,
+input,
+legend,
+pre,
+abbr,
+button {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+Resets font size, weight, and style.
+*/
+pre,
+code,
+address,
+caption,
+th,
+figcaption {
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+Removes borders from `fieldsets`/`iframes`.
+Removes border from an `img`, relevant when the `img` is
+placed inside an `a` element in IE 9/10.
+*/
+fieldset,
+iframe,
+img {
+  	border: 0;
+}
+
+/*
+Resets the default 'center' alignment on elements.
+*/
+caption,
+th {
+  	text-align: left;
+}
+
+/*
+Removes spaces between table cells.
+*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Sets the correct `block` display, relevant for IE 9/10/11.
+*/
+article,
+aside,
+footer,
+header,
+nav,
+main,
+section,
+summary,
+details,
+hgroup,
+figure,
+figcaption {
+  	display: block;
+}
+
+/*
+Sets the correct `inline-block` display, relevant for
+IE 9.
+Normalizes vertical alignment of `progress`, relevant
+for Chrome and Firefox.
+*/
+audio,
+canvas,
+video,
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+/*
+Removes form-like styles from the `button` element.
+Addresses `overflow` set to `hidden` in IE 9/10/11.
+*/
+button {
+	background: none;
+	border: 0;
+	box-sizing: content-box;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	line-height: inherit;
+	overflow: visible;
+	vertical-align: inherit;
+}
+button:disabled {
+	cursor: default;
+}
+
+/*
+Resets focus.
+*/
+:focus {
+	outline: none;
+}
+
+/*
+Removes form-specific Firefox focus styles.
+*/
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}

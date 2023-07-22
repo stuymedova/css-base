@@ -1,0 +1,17 @@
+.overflow-y {
+	overflow-y: auto;
+	/*
+	Enables native-style scrolling on a touchscreen
+	- https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariCSSRef/Articles/StandardCSSProperties.html#//apple_ref/doc/uid/TP30001266-SW26
+	- https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling
+	*/
+	-webkit-overflow-scrolling: touch;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
